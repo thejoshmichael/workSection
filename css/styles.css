@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  cursor: url(/images/arrow.svg), auto; }
+
+.container {
+  width: 100%; }
+  .container figure {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative; }
+    .container figure img {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      -webkit-transition: -webkit-transform 0.8s ease;
+      transition: -webkit-transform 0.8s ease;
+      transition: transform 0.8s ease;
+      transition: transform 0.8s ease, -webkit-transform 0.8s ease; }
+    .container figure:hover img {
+      -webkit-transform: scale(0.7) perspective(1000px) rotateY(-20deg);
+              transform: scale(0.7) perspective(1000px) rotateY(-20deg); }
+    .container figure:hover figcaption {
+      left: 5%; }
+    .container figure figcaption {
+      position: absolute;
+      top: 50%;
+      left: -100%;
+      font-size: 45px;
+      font-family: "Helvetica", sans-serif;
+      font-weight: 100;
+      color: white;
+      z-index: 1;
+      -webkit-transition: all 1800ms cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1800ms cubic-bezier(0.19, 1, 0.22, 1); }
